@@ -1,0 +1,41 @@
+{
+	"name": "react-dnd-forms",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.6.1",
+		"json-server": "^0.16.3",
+		"normalize.css": "^8.0.1",
+		"react": "^17.0.2",
+		"react-beautiful-dnd": "^13.1.0",
+		"react-dom": "^17.0.2",
+		"react-icons": "^4.2.0",
+		"react-redux": "^7.2.5",
+		"react-router-dom": "^5.3.0",
+		"react-scripts": "4.0.3",
+		"redux": "^4.1.1",
+		"redux-thunk": "^2.3.0",
+		"reselect": "^4.0.0",
+		"styled-components": "^5.3.1",
+		"uuid": "^8.3.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"server": "json-server --watch ./src/db/forms.json --port 5000"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

@@ -1,0 +1,115 @@
+{
+	"forms": [
+		{
+			"id": 0,
+			"name": "Register",
+			"timestamp": "Friday, 17 Sept",
+			"inputs": [
+				{
+					"type": "table",
+					"label": "The table",
+					"name": "table1",
+					"body": [
+						[
+							[
+								{
+									"type": "textarea",
+									"label": "description",
+									"name": "description",
+									"value": ""
+								}
+							],
+							[],
+							[]
+						],
+						[
+							[],
+							[],
+							[]
+						]
+					]
+				},
+				{
+					"type": "divider",
+					"label": "",
+					"name": "",
+					"value": ""
+				},
+				{
+					"type": "textarea",
+					"label": "description",
+					"name": "description",
+					"value": ""
+				},
+				{
+					"type": "email",
+					"label": "Email",
+					"name": "userEmail",
+					"value": ""
+				},
+				{
+					"type": "password",
+					"label": "Password",
+					"name": "pass",
+					"value": ""
+				},
+				{
+					"type": "fileUploader",
+					"label": "Upload here",
+					"name": "upload",
+					"value": ""
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Login",
+			"timestamp": "Monday, 20 Sept",
+			"inputs": [
+				{
+					"type": "email",
+					"label": "Email",
+					"name": "email",
+					"value": ""
+				},
+				{
+					"type": "text",
+					"label": "Password",
+					"name": "password",
+					"value": ""
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Login 2",
+			"timestamp": "Monday, 20 Sept",
+			"inputs": [
+				{
+					"type": "text",
+					"label": "Email",
+					"name": "email",
+					"value": ""
+				},
+				{
+					"type": "divider",
+					"label": "",
+					"name": "",
+					"value": ""
+				},
+				{
+					"type": "text",
+					"label": "Password",
+					"name": "password",
+					"value": ""
+				},
+				{
+					"type": "checkbox",
+					"label": "Remember me",
+					"name": "emember",
+					"value": ""
+				}
+			]
+		}
+	]
+}
