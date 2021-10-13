@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk, createDraftSafeSelector } from '@reduxjs
 export const getAllForms = createAsyncThunk(
 	'forms/getAllForms',
 	async () => {
-		const res =  await fetch( 'http:///localhost:5000/forms'),
+		const res =  await fetch( 'https://rdnd-server.herokuapp.com/forms'),
 		data = await res.json()
 		return data
 	}

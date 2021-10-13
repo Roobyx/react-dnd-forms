@@ -16,7 +16,7 @@ export const updateServerWithState = () => {
 		}
 
 		try {
-			const fetchResponse = await fetch(`http://localhost:5000/forms/${currentValue.id}`, settings)
+			const fetchResponse = await fetch(`https://rdnd-server.herokuapp.com/forms/${currentValue.id}`, settings)
 			const data = await fetchResponse.json()
 			return data
 		} catch (e) {
@@ -28,7 +28,7 @@ export const updateServerWithState = () => {
 // Fetch a given form from the server
 export const fetchFormById = (id) => {
 	return async (dispatch) => {
-		const form = await fetch(`http:///localhost:5000/forms/${id}`)
+		const form = await fetch(`https://rdnd-server.herokuapp.com/forms/${id}`)
 		dispatch(setActiveForm(await form.json()))
 	}
 }
