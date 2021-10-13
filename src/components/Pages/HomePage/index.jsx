@@ -2,6 +2,7 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch  } from 'react-redux'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 // Redux
 import { getAllForms, getFormsList } from '../../../features/forms/formsSlice'
@@ -15,6 +16,24 @@ import FormMenu from '../../Simple/FormMenu/FormMenu'
 
 const SidebarNav = () => {
 	return	<IconButton variation='create' to='/form/create'/>
+}
+
+const StyledCta = styled.div`
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	background: linear-gradient( to right, 
+		hsl(280deg 100% 62%), 
+		hsl(204 100% 59%)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	font-size: 40px;
+	`
+
+const Cta = () => {
+	return	<StyledCta> Select or create <br /> a from the menu</StyledCta>
 }
 
 const SidebarContent = () => {
@@ -54,7 +73,10 @@ const SidebarContent = () => {
 
 const HomePage = () => {
 	return (
-		<SidebarPageTemplate sidebarNav={SidebarNav()} sidebarContent={SidebarContent()} />
+		<>
+			<SidebarPageTemplate sidebarNav={SidebarNav()} sidebarContent={SidebarContent()} />
+			<Cta />
+		</>
 	)
 }
 
